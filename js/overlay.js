@@ -55,10 +55,13 @@ $(document).ready(function() {
 			).prepend('<div id="fancyOverlay-large">');
 
 		$('#fancyoverlay a').click(function(e) {
+
 			e.preventDefault();
 			var img = $(this).find('img');
+			const largeSrc = img.attr('src').replace('thumbs', 'large');
+
 			$('#fancyOverlay-large').html(
-				$('<img>').attr('src', img.attr('src'))
+				$('<img>').attr('src', largeSrc)
 			);
 		});
 
