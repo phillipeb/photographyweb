@@ -1,29 +1,10 @@
 'use strict';
 
 
-// var owlArray = [{
-// 	large:"/images/ACCESSORIES-STILL/INSTYLE15/large/1.jpg",
-// 	thumbs:"/images/ACCESSORIES-STILL/INSTYLE15/thumbs/1.jpg"
-// }, {
-// 	large:"/images/ACCESSORIES-STILL/TEENVOGUE/large/1.jpg",
-// 	thumbs:"/images/ACCESSORIES-STILL/TEENVOGUE/thumbs/1.jpg"
-// }];
+// var template = _.template("<div class='item'><img src='<%= obj.thumbs %>' /></div>", {attr : 'obj'});
 
-
-/**
- * 1. on click of an image, grab json attribute off of a tag.
- * @type {Function}
- */
-
-
-
-// todo : make this template funciton work
-var template = _.template("<div class='item'><img src='<%= obj.thumbs %>' /></div>", {attr : 'obj'});
-
-$(".shmerds").click( function(e) {
+$("a ['data-lightbox']").click( function(e) {
 	e.preventDefault();
-	// var jsonPath = $(this).data("json");
-	// debugger;
 	owlArray.forEach(function(content) {
 		var html = template(content)
 		$("#fancyoverlay").append(html);
