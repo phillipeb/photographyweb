@@ -60,7 +60,7 @@ $(document).ready(function() {
 			.empty() // empty the overlay before putting more stuff into it
 			.show() // show it (it's hidden)
 			.html(template({
-				carouselHtml : hiddenCarousel[0].outerHTML
+				carouselHtml : hiddenCarousel[0] && hiddenCarousel[0].outerHTML
 			}))// fill it with the slick carousel created above
 			.find('.overlay-carousel')
 			.slick(opts); // invoke the slick carousel on the carousel html in there
