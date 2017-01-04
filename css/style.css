@@ -270,11 +270,26 @@ h2 {
 }
 
 #fancyoverlay {
-  z-index:blah;
-  display: hidden;
+  z-index:100;
+  display: none;
   height:100% ;
   width:100%;
+  top:0px;
+  left:0px;
   position: fixed;
+  background-color: grey;
+}
+
+#fancyoverlay div.overlay-carousel {
+  width: 80%;
+  margin-right:10%;
+  margin-left:10%;
+  position: absolute;
+  bottom:20px;
+}
+
+#fancyoverlay div.overlay-carousel img {
+  height : 20%;
 }
 
 .lb-closeContainer {

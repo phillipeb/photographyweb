@@ -1,50 +1,72 @@
 'use strict';
-//javascript after that
 
-var owlArray = [{
-	large:”/images/ACCESSORIES-STILL/INSTYLE15/large/1.jpg”,
-	thumbs:”/images/ACCESSORIES-STILL/INSTYLE15/thumbs/1.jpg” 
-}, {
-	large:”/images/ACCESSORIES-STILL/TEENVOGUE/large/1.jpg”,
-	thumbs:”/images/ACCESSORIES-STILL/TEENVOGUE/thumbs/1.jpg” 
-}]
 
-// cahnge template to add the owl carousel class so it initializes properly.
-//underscore.template is a function that returns a function to var template/ so var template is a function in an of itself.
-var template = _.template("<div class="item"><img src="<%= obj.thumbs %>" /></div>", {attr : 'obj'}) // todo : make this template funciton work
+var opts = {
+	dots: false,
+	infinite: true,
+	slidesToShow: 5,
+	slidesToScroll: 3,
+	speed: 300,
+	centerMode: false,
+	variableWidth: true,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				infinite:true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				variableWidth:true,
+				dots: false
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				variableWidth: true
+			}
+		}
+	]
+};
 
-$(".shmerds").click( function(e) {
-	e.preventDefault();
-	// var jsonPath = $(this).data("json");
-	// debugger;
-	owlArray.forEach(function(content) {
-		var html = template(content)
-		$("#fancyoverlay").append(html);
+$(document).ready(function() {
+
+	$(".lightbox-thumbs a").click(function(e) {
+
+		e.preventDefault();
+
+		var carouselId = $(this).data('overlay-pointer');
+		var hiddenCarousel = $("[data-overlay='" + carouselId + "']")
+			.clone()
+			.addClass('overlay-carousel')
+			.slick(opts);
+
+		$('#fancyoverlay')
+			.empty() // empty the overlay before putting more stuff into it
+			.show() // show it (it's hidden)
+			.html(hiddenCarousel) // fill it with the slick carousel created above
+			.prepend('<div id="fancyOverlay-large">'); // add empty container for the large size image
+
+		$('#fancyoverlay a').click(function(e) {
+
+			e.preventDefault();
+			var img = $(this).find('img');
+			const largeSrc = img.attr('src').replace('thumbs', 'large');
+
+			$('#fancyOverlay-large').html(
+				$('<img>').attr('src', largeSrc)
+			);
+		});
+
+
 	});
-
-	// basically:
-	// overlay hidden
-	// show then .append() to overlay
-	// for unique array.
-	// call owl carousel to fit template
-	//for ajax yet to come: 
-	//$.ajax({
-	// 	url: "/json/",
-	// 	dataType : "json",
-	// 	beforeSend : function () {
-	// 		// todo : create a spinny wheel here to wait for your request
-	// 	},
-	// 	success : function(data, status, xhr) {
-	// 		debugger;
-	// 		console.log(data);
-	// 		data.forEach(function(obj) {
-	// 			var html = ''; // todo : here create html from your template // call the template function here
-	// 			$.append; // todo :: append the html that your template generated to the DOM here. 
-	// 		});
-	// 	},
-	// 	error : function() {
-	// 		console.log("fuck you");
-	// 	}
-	// });
-  
 });
