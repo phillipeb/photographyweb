@@ -280,6 +280,18 @@ h2 {
   background-color: grey;
 }
 
+#fancyoverlay div.overlay-carousel {
+  width: 80%;
+  margin-right:10%;
+  margin-left:10%;
+  position: absolute;
+  bottom:20px;
+}
+
+#fancyoverlay div.overlay-carousel img {
+  height : 20%;
+}
+
 .lb-closeContainer {
     position: absolute;
     right: -25px;

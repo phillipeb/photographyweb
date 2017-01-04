@@ -1,7 +1,6 @@
 'use strict';
 
 
-var template = _.template("<div class='item'><img src='<%= obj.thumbs %>' /></div>", {attr : 'obj'});
 var opts = {
 	dots: false,
 	infinite: true,
@@ -45,17 +44,24 @@ $(document).ready(function() {
 
 		e.preventDefault();
 		var carouselId = $(this).data('overlay-pointer');
-		var hiddenCarousel = $("[data-overlay='" + carouselId + "']").clone();
+		var hiddenCarousel = $("[data-overlay='" + carouselId + "']")
+			.clone()
+			.addClass('overlay-carousel');
 
 		$('#fancyoverlay')
 			.show()
 			.html(
 				hiddenCarousel.slick(opts)
-			);
+			).prepend('<div id="fancyOverlay-large">');
 
 		$('#fancyoverlay a').click(function(e) {
 			e.preventDefault();
+			var img = $(this).find('img');
+			$('#fancyOverlay-large').html(
+				$('<img>').attr('src', img.attr('src'))
+			);
 		});
+
 
 	});
 });
