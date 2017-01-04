@@ -43,16 +43,18 @@ $(document).ready(function() {
 	$(".lightbox-thumbs a").click(function(e) {
 
 		e.preventDefault();
+
 		var carouselId = $(this).data('overlay-pointer');
 		var hiddenCarousel = $("[data-overlay='" + carouselId + "']")
 			.clone()
-			.addClass('overlay-carousel');
+			.addClass('overlay-carousel')
+			.slick(opts);
 
 		$('#fancyoverlay')
-			.show()
-			.html(
-				hiddenCarousel.slick(opts)
-			).prepend('<div id="fancyOverlay-large">');
+			.empty() // empty the overlay before putting more stuff into it
+			.show() // show it (it's hidden)
+			.html(hiddenCarousel) // fill it with the slick carousel created above
+			.prepend('<div id="fancyOverlay-large">'); // add empty container for the large size image
 
 		$('#fancyoverlay a').click(function(e) {
 
