@@ -38,35 +38,45 @@ var opts = {
 	]
 };
 
+var template = _.template($('#fancyOverlay-template').html(), { variable : 'obj' });
+var showLargeImage = function(clickedLink) {
+	var largeSrc = $(clickedLink).find('img').attr('src').replace('thumbs', 'large');
+
+	$('#fancyOverlay-large').html(
+		$('<img>').attr('src', largeSrc)
+	);
+};
+
 $(document).ready(function() {
 
 	$(".lightbox-thumbs a").click(function(e) {
-
 		e.preventDefault();
-
 		var carouselId = $(this).data('overlay-pointer');
 		var hiddenCarousel = $("[data-overlay='" + carouselId + "']")
 			.clone()
-			.addClass('overlay-carousel')
-			.slick(opts);
+			.addClass('overlay-carousel');
 
 		$('#fancyoverlay')
 			.empty() // empty the overlay before putting more stuff into it
 			.show() // show it (it's hidden)
-			.html(hiddenCarousel) // fill it with the slick carousel created above
-			.prepend('<div id="fancyOverlay-large">'); // add empty container for the large size image
+			.html(template({
+				carouselHtml : hiddenCarousel[0] && hiddenCarousel[0].outerHTML
+			}))// fill it with the slick carousel created above
+			.find('.overlay-carousel')
+			.slick(opts); // invoke the slick carousel on the carousel html in there
 
+		// set up click event to populate the large size image when user clicks the carousel
 		$('#fancyoverlay a').click(function(e) {
-
 			e.preventDefault();
-			var img = $(this).find('img');
-			const largeSrc = img.attr('src').replace('thumbs', 'large');
-
-			$('#fancyOverlay-large').html(
-				$('<img>').attr('src', largeSrc)
-			);
+			showLargeImage(this);
 		});
 
+		// set up click event for "x" button to empty out the fancy overlay box :
+		$('#fancyoverlay .close-button').click(function () {
+			$('#fancyoverlay').empty().hide();
+		});
 
+		// show the first of the large images :
+		showLargeImage($('#fancyoverlay a')[0]);
 	});
 });

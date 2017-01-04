@@ -569,7 +569,9 @@
         <div class="hidden-carousel">
             <a href="images/ADVERTISING/THEMETROPOLITANOPERA-TWOBOYS/thumbs/1.jpg" data-lightbox="THEMETROPOLITANOPERA-TWOBOYS"></a>
         </div>
+        <!--This is teh template, follow this pattern : -->
         <div class="hidden-carousel" data-overlay="UNTITLED10">
+            <a href="images/EDITORIAL/UNTITLED10/thumbs/1.jpg"><img src="images/EDITORIAL/UNTITLED10/thumbs/1.jpg" /></a>
             <a href="images/EDITORIAL/UNTITLED10/thumbs/2.jpg"><img src="images/EDITORIAL/UNTITLED10/thumbs/2.jpg" /></a>
             <a href="images/EDITORIAL/UNTITLED10/thumbs/3.jpg"><img src="images/EDITORIAL/UNTITLED10/thumbs/3.jpg" /></a>
             <a href="images/EDITORIAL/UNTITLED10/thumbs/4.jpg"><img src="images/EDITORIAL/UNTITLED10/thumbs/4.jpg" /></a>
@@ -1058,9 +1060,15 @@
 
     <div id ="fancyoverlay"></div>
 
+    <script id="fancyOverlay-template" type="text/template">
+        <span class="close-button">x</span>
+        <div id="fancyOverlay-large"></div>
+        <div id="fancyOverlay-carousel"><%= obj.carouselHtml %></div>
+    </script>
 
     <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

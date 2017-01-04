@@ -292,6 +292,16 @@ h2 {
   height : 20%;
 }
 
+#fancyoverlay .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: greenyellow;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
 .lb-closeContainer {
     position: absolute;
     right: -25px;
