@@ -270,11 +270,14 @@ h2 {
 }
 
 #fancyoverlay {
-  z-index:blah;
-  display: hidden;
+  z-index:100;
+  display: none;
   height:100% ;
   width:100%;
+  top:0px;
+  left:0px;
   position: fixed;
+  background-color: grey;
 }
 
 .lb-closeContainer {

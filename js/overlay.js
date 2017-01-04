@@ -25,7 +25,7 @@ var opts = {
 			breakpoint: 600,
 			settings: {
 				slidesToShow: 2,
-				slidesToScroll: 1,
+				slidesToScroll: 1
 			}
 		},
 		{
@@ -33,7 +33,7 @@ var opts = {
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				variableWidth:true,
+				variableWidth: true
 			}
 		}
 	]
