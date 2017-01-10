@@ -42,8 +42,10 @@ var template = _.template($('#fancyOverlay-template').html(), { variable : 'obj'
 var showLargeImage = function(clickedLink) {
 	if (!clickedLink || ($(clickedLink).find('img').length === 0)) {
 		console.warn('no image found, cannot show large image.');
+		closeOverlay();
 		return;
 	};
+
 	var largeSrc = $(clickedLink).find('img').attr('src').replace('thumbs', 'large');
 
 	$('#fancyOverlay-large').html(
@@ -53,8 +55,10 @@ var showLargeImage = function(clickedLink) {
 var populateOverlay = function (hiddenCarousel) {
 	if (!hiddenCarousel[0]) {
 		console.warn('no carousel found, cannot show large image.');
+		closeOverlay();
 		return;
 	};
+
 	$('#fancyoverlay')
 		.empty() // empty the overlay before putting more stuff into it
 		.show() // show it (it's hidden)
@@ -72,9 +76,12 @@ var populateOverlay = function (hiddenCarousel) {
 
 	// set up click event for "x" button to empty out the fancy overlay box :
 	$('#fancyoverlay .close-button').click(function () {
-		$('#fancyoverlay').empty().hide();
+		closeOverlay();
 	});
 
+};
+var closeOverlay = function () {
+	$('#fancyoverlay').empty().hide();
 };
 
 $(document).ready(function() {
