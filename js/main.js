@@ -74,7 +74,8 @@ $(document).ready(function(){
           slidesToScroll: 1,
           variableWidth:true,
           dots: false,
-          infinite: true
+          infinite: true,
+          arrows: true
         }
       },
       {
@@ -92,6 +93,7 @@ $(document).ready(function(){
           slidesToScroll: 1,
           variableWidth:true,
           infinite: true
+
         }
       }
     ]
