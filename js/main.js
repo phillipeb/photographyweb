@@ -63,7 +63,7 @@ $(document).ready(function(){
     slidesToShow: 5,
     slidesToScroll: 3,
     speed: 300,
-    centerMode: false,
+    centerMode: true,
     variableWidth: true,
     responsive: [
       {
@@ -73,7 +73,8 @@ $(document).ready(function(){
           slidesToShow: 3,
           slidesToScroll: 1,
           variableWidth:true,
-          dots: false
+          dots: false,
+          infinite: true
         }
       },
       {
@@ -81,6 +82,7 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          infinite: true
         }
       },
       {
@@ -89,6 +91,7 @@ $(document).ready(function(){
           slidesToShow: 1,
           slidesToScroll: 1,
           variableWidth:true,
+          infinite: true
         }
       }
     ]

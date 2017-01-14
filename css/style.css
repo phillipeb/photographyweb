@@ -290,15 +290,15 @@ h2 {
 
 #fancyoverlay div.overlay-carousel img {
   height : 20%;
+
 }
 
 #fancyoverlay .close-button {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: greenyellow;
   padding: 10px;
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
 }
 
@@ -307,4 +307,9 @@ h2 {
     right: -25px;
     top: -600px;
     z-index: 11;
+}
+
+#fancyOverlay-large {
+  margin-left: 35%;
+  margin-right:35%;
 }
