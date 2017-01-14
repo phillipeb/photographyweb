@@ -1,4 +1,4 @@
-//Image Slider
+  //Image Slider
 
 //Slide Menu Nav
 var menu       = $(".menu"),
@@ -65,36 +65,36 @@ $(document).ready(function(){
     speed: 300,
     centerMode: true,
     variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          infinite:true,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          variableWidth:true,
-          dots: false,
-          infinite: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          variableWidth:true,
-          infinite: true
-        }
-      }
-    ]
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       infinite:true,
+    //       slidesToShow: 3,
+    //       slidesToScroll: 1,
+    //       variableWidth:true,
+    //       dots: false,
+    //       infinite: true
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //       infinite: true
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //       variableWidth:true,
+    //       infinite: true
+    //     }
+    //   }
+    // ]
   });
 
   showSlides();
