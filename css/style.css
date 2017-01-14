@@ -67,6 +67,7 @@ body {
 .Pspace {
   padding-top: 10px;
   padding-bottom: 10px;
+  line-height: 1;
 }
 
 
@@ -164,7 +165,7 @@ a:focus img {
   clear:both;
   position: center;
   text-align: center;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .menu ul li a {
