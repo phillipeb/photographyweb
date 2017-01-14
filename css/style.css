@@ -314,3 +314,10 @@ h2 {
   margin-left: 35%;
   margin-right:35%;
 }
+
+#SocialIcons {
+  position: absolute; 
+  bottom: 80;
+  left:270px;
+
+}
