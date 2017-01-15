@@ -418,7 +418,7 @@
 }
  }
 
- @media  (min-width: 768px) {
+ @media  (max-width:900)(min-width: 768px)  {
 
     .variable-width img{
     max-height:90%;
