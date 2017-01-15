@@ -287,8 +287,7 @@
     left:0px;
     position: fixed;
     background-color: rgb(209,209,209);
-    height:100%;
-  }
+    }
 
   #fancyOverlay-carousel {
     position: relative;
@@ -308,11 +307,15 @@
     border-radius: 0px;
     
   }
+  #fancyOverlay-large  img {
+    height: 80%;
+    vertical-align: center;
+    width: auto;
+  }
   #fancyOverlay-large div img {
    top:50px; 
-  max-width: auto;
   position: fixed;
-  max-height: 80%;
+
   }
 
   #fancyoverlay .close-button {
