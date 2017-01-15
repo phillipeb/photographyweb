@@ -367,7 +367,7 @@
       z-index: 100;
   }
 
-  @media only all and (max-width: 600px) {
+  @media (max-width: 600px) {
     .variable-width img{
     max-height:70%;
     padding-top: 2px;
@@ -389,9 +389,9 @@
     font-size: 6vw;
     font-weight: 900;
     line-height: 1;
-    height:auto;
+    height:280px;
     text-align: left;
-    padding: 90px 0 60px 60px;
+    padding: 120px 0 60px 60px;
     vertical-align: middle;
    
   }
@@ -418,7 +418,7 @@
 }
  }
 
- @media only all and (min-width: 768px) {
+ @media  (min-width: 768px) {
 
     .variable-width img{
     max-height:90%;

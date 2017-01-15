@@ -75,24 +75,26 @@ $(document).ready(function(){
           variableWidth:true,
           dots: false,
           infinite: true,
-          arrows: true
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows:false
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           variableWidth:true,
-          infinite: true
+          infinite: true,
+          arrows:false
 
         }
       }
