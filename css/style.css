@@ -289,7 +289,7 @@
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.85;
   }
 
   #fancyoverlay {
@@ -327,13 +327,19 @@
     vertical-align: center;
   }
 
-  #fancyOverlay-large {
-    padding-left: 300px;
-    padding-right: 300px;
-  }
+  /*#fancyOverlay-large {*/
+    /*padding-left: 300px;*/
+    /*padding-right: 300px;*/
+  /*}*/
+
   /* Looks like the image is centered in the div but the image itself is not taking up the full height */
   #fancyOverlay-large  img {
+    display: block;
     height:80%;
+    margin-top:10px;
+    margin-bottom:5px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #fancyOverlay-large div img {
@@ -346,8 +352,8 @@
 
   #fancyoverlay .close-button {
     position: absolute;
-    top: 1%;
-    left:1200px;
+    top: 20px;
+    right:50px;
     color: #ddd;
     padding: 10px;
     font-size: 40px;

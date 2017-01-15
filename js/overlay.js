@@ -80,8 +80,8 @@ var populateOverlay = function (hiddenCarousel) {
 	$('#fancyoverlay .close-button').click(function () {
 		closeOverlay();
 	});
-
 };
+
 var closeOverlay = function () {
 	$('body').css('overflow', 'auto');
 	$('#fancyoverlay-bg').hide();
@@ -100,5 +100,11 @@ $(document).ready(function() {
 		populateOverlay(hiddenCarousel);
 		// show the first of the large images :
 		showLargeImage($('#fancyoverlay a')[0]);
+	});
+
+	$(document).keypress(function(e){
+		if(e.which == 27){
+			closeOverlay();
+		}
 	});
 });
