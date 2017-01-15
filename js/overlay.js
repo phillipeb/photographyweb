@@ -4,7 +4,7 @@
 var opts = {
 	dots: false,
 	infinite: true,
-	slidesToShow: 5,
+	slidesToShow: 3,
 	slidesToScroll: 3,
 	speed: 300,
 	centerMode: false,
