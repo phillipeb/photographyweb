@@ -366,6 +366,10 @@
       top: -600px;
       z-index: 100;
   }
+  /* over-ride the slick carousel arrow color, black is nearly invisible */
+  /*button.slick-arrow:before {*/
+    /*color: #ddd;*/
+  /*}*/
 
   @media (max-width: 600px) {
     .variable-width img{
