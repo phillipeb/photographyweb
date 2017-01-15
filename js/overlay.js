@@ -59,6 +59,8 @@ var populateOverlay = function (hiddenCarousel) {
 		return;
 	};
 
+	$('body').css('overflow', 'hidden');
+	$('#fancyoverlay-bg').show();
 	$('#fancyoverlay')
 		.empty() // empty the overlay before putting more stuff into it
 		.show() // show it (it's hidden)
@@ -81,6 +83,8 @@ var populateOverlay = function (hiddenCarousel) {
 
 };
 var closeOverlay = function () {
+	$('body').css('overflow', 'auto');
+	$('#fancyoverlay-bg').hide();
 	$('#fancyoverlay').empty().hide();
 };
 
