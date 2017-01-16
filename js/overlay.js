@@ -3,21 +3,23 @@
 
 var opts = {
 	dots: false,
-	infinite: true,
+	infinite: false,
 	slidesToShow: 3,
 	slidesToScroll: 3,
 	speed: 300,
 	centerMode: false,
 	variableWidth: true,
+	arrows: true,
 	responsive: [
 		{
 			breakpoint: 1024,
 			settings: {
-				infinite:true,
+				infinite:false,
 				slidesToShow: 3,
 				slidesToScroll: 1,
 				variableWidth:true,
-				dots: false
+				dots: false,
+				arrows:true
 			}
 		},
 		{

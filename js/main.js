@@ -59,7 +59,7 @@ function showSlides() {
 $(document).ready(function(){
   $('.variable-width').slick({
     dots: false,
-    infinite: true,
+    infinite: false,
     slidesToShow: 5,
     slidesToScroll: 3,
     speed: 300,
@@ -69,13 +69,13 @@ $(document).ready(function(){
       {
         breakpoint: 1024,
         settings: {
-          infinite:true,
-          slidesToShow: 3,
+          infinite:false,
+          slidesToShow: 5,
           slidesToScroll: 1,
           variableWidth:true,
           dots: false,
           infinite: true,
-          arrows: false
+          arrows: true
         }
       },
       {
