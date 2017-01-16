@@ -69,7 +69,7 @@
   .Pspace {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 1;
+    line-height: 1.2;
   }
 
 
@@ -96,7 +96,7 @@
   	font-size: 6vw;
   	font-weight: 900;
     text-decoration: none;
-    height: 800px;
+    height: 900px;
     padding: 60px 60px;
 
   }
@@ -304,7 +304,6 @@
 
   #fancyOverlay-carousel {
     position: relative;
-    /*background-color: rgb(209,209,209)*/
   }
 
 
@@ -327,12 +326,8 @@
     vertical-align: center;
   }
 
-  /*#fancyOverlay-large {*/
-    /*padding-left: 300px;*/
-    /*padding-right: 300px;*/
-  /*}*/
 
-  /* Looks like the image is centered in the div but the image itself is not taking up the full height */
+
   #fancyOverlay-large  img {
     display: block;
     height:80%;
@@ -366,10 +361,12 @@
       top: -600px;
       z-index: 100;
   }
-  /* over-ride the slick carousel arrow color, black is nearly invisible */
-  /*button.slick-arrow:before {*/
-    /*color: #ddd;*/
-  /*}*/
+   /*over-ride the slick carousel arrow color, black is nearly invisible */
+  button.slick-arrow:before {
+    color: #ddd;
+  
+
+  /*For phone screen sizes*/
 
   @media (max-width: 600px) {
     .variable-width img{
@@ -421,8 +418,8 @@
     text-align: left;
 }
  }
-
- @media  (max-width:900)(min-width: 768px)  {
+/*For tablet screen sizes*/ 
+@media  (max-width:900)(min-width: 768px)  {
 
     .variable-width img{
     max-height:90%;
@@ -484,4 +481,31 @@
     outline: none;
     background: none;
  }
+}
+
+/*For desktop screen sizes*/
+@media  (max-width:2525)(min-width: 1600px)  {
+
+    #services {
+    font-family: Futura;
+    font-size: 6vw;
+    font-weight: 900;
+    text-decoration: none;
+    height: 1220px;
+    padding: 60px 60px;
+
+  }
+
+   #introtext {
+    font-family: Futura;
+    font-size: 6vw;
+    font-weight: 900;
+    line-height: 1;
+    height:50%;
+    text-align: left;
+    padding: 190px 0 60px 60px;
+    vertical-align: middle;
+    height: 1220px;
+   
+  }
 }
