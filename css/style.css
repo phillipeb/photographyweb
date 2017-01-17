@@ -368,12 +368,12 @@
    /*over-ride the slick carousel arrow color, black is nearly invisible */
   button.slick-arrow:before {
     color: #ddd;
-  
+  }
 
   /*For phone screen sizes*/
 
   @media (max-width: 600px) {
-    .variable-width img{
+  .variable-width img{
     max-height:70%;
     padding-top: 2px;
     padding-bottom: 2px; 
@@ -421,9 +421,14 @@
     top: 30%;
     text-align: left;
 }
+
+#services {
+  padding-top:20%;
+  height:500px!important;
+}
  }
 /*For tablet screen sizes*/ 
-@media  (max-width:900)(min-width: 768px)  {
+@media screen (max-width:900)(min-width: 768px)  {
 
     .variable-width img{
     max-height:90%;
@@ -497,6 +502,7 @@
     text-decoration: none;
     height: 1220px;
     padding: 60px 60px;
+
 
   }
 
