@@ -238,14 +238,18 @@
 
   .navicon img {
     height: auto;
-    width: 90%;
+    width: 85%;
     padding: 0 0 0 0;
   }
-
+.navbar-brand img {
+  padding-top:5px;
+  width:50%;
+}
   .navbar-brand,
   .navbar-nav li a {
       height: 60px;
       padding: 0 25px 0;
+      
   }
 
   /* Slideshow container */
