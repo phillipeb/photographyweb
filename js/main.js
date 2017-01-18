@@ -104,3 +104,14 @@ $(document).ready(function(){
   showSlides();
 });
 
+$(document).ready(function() {
+
+  $('.answer').hide();
+  
+  $(".toggle").click(function(){
+      $(".answer").not($(this).next()).hide(10,"linear");
+      $("li[rel='profile_" + $(this).attr("profile") + "']").slideToggle("slow");
+});
+         
+});
+
