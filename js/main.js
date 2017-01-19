@@ -109,7 +109,7 @@ $(document).ready(function() {
   $('.answer').hide();
   
   $(".toggle").click(function(){
-      $(".answer").not($(this).next()).hide(10,"linear");
+      $(".answer").not($(this).next()).hide("fast","linear");
       $("li[rel='profile_" + $(this).attr("profile") + "']").slideToggle("slow");
 });
          

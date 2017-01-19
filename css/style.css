@@ -370,6 +370,33 @@
     color: #ddd;
   }
 
+  /* Required to hold the caption, or any closest parent selector to  .slide__caption */
+.slick-slide {
+  position: relative;
+
+}
+.caption {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-top: 75px;
+  height: 100%;
+  width:100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 4vh;
+}
+
+.slide--has-caption:hover  .caption {
+  visibility: visible!important;
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: none;
+  z-index: 2;
+
+}
+
   /*For phone screen sizes*/
 
   @media (max-width: 600px) {
@@ -404,7 +431,7 @@
     position: absolute;
     top: 45%;
     left: 0px;
-    z-index: 100;
+    z-index: 10;
     width: 95%;
     border-width: 6px;
     border-bottom: none;
@@ -493,14 +520,14 @@
 }
 
 /*For desktop screen sizes*/
-@media  (max-width:2525)(min-width: 1600px)  {
+@media (min-width: 1900px)  {
 
     #services {
     font-family: Futura;
     font-size: 6vw;
     font-weight: 900;
     text-decoration: none;
-    height: 1220px;
+    height: 1200px;
     padding: 60px 60px;
 
 
@@ -511,11 +538,11 @@
     font-size: 6vw;
     font-weight: 900;
     line-height: 1;
-    height:50%;
     text-align: left;
     padding: 190px 0 60px 60px;
     vertical-align: middle;
-    height: 1220px;
+    height: 1200px;
+    padding-top: 20%;
    
   }
 }
