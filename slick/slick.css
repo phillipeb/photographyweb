@@ -83,7 +83,7 @@
     width: auto;
     min-height: 1px;
     padding-left: 0px;
-    padding-right:10px;
+    margin-right:10px;
     outline: none;
 }
 [dir='rtl'] .slick-slide
@@ -95,6 +95,7 @@
     display: block;
     outline: none;
     height: 100%;
+    max-width: 100%;
 
 }
 .slick-slide.slick-loading img

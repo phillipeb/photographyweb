@@ -61,7 +61,7 @@ $(document).ready(function(){
     dots: false,
     infinite: false,
     slidesToShow: 5,
-    slidesToScroll: 10,
+    slidesToScroll: 1,
     speed: 300,
     centerMode: true,
     variableWidth: true,
@@ -71,7 +71,7 @@ $(document).ready(function(){
         settings: {
           infinite:false,
           slidesToShow: 5,
-          slidesToScroll: 10,
+          slidesToScroll: 1,
           variableWidth:true,
           dots: false,
           infinite: true,
@@ -81,7 +81,7 @@ $(document).ready(function(){
       {
         breakpoint: 760,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           arrows:false
