@@ -115,13 +115,8 @@ $(document).ready(function() {
          
 });
 
-jQuery('#fancyOverlay-large').on({
-    beforeChange: function(event, slick, current_slide_index, next_slide_index) {
-        //remove all active class
-        jQuery('#fancyOverlay-large .slick-slide').removeClass('slick-main-active');
-        //set active class for current slide
-        jQuery('#fancyOverlay-large .slick-slide[data-index='+next_slide_index+']').addClass('slick-main-active');
-    }
-}).slick({
-    asNavFor: '#fancyOverlay-carousel',
-}); 
+const openers = document.querySelector('.openers');
+
+function handleOpeners(e) {
+    e.currentTarget.classList.toggle('open');
+}

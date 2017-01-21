@@ -159,7 +159,8 @@
   }
 
   .menu>ul {
-    padding: 120px 20px 0;
+    padding: 120 0 0 0;
+    
   }
   .menu ul li {
     list-style: none;
@@ -311,6 +312,15 @@
     height: 600px;
   }
 
+#fancyOverlay-carousel> .slick-act  {
+  border-style: solid;
+  border-width:5px;
+  border-top-color: yellow;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
   #fancyOverlay-carousel div {
    
    margin-left: 150px;
@@ -404,9 +414,19 @@
 
   /*For phone screen sizes*/
 
-  @media (max-width: 768px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
+.menu>ul {
+    padding: 120 40 0 60;
 
+    
+  }
+
+  .slide--has-caption:hover .caption {
+    display: none;
+ 
+
+}
   .navbar-brand img {
     padding-top: 5px;
     width: 50%;
@@ -415,7 +435,7 @@
   .variable-width img{
     max-height:70%;
     padding-top: 2px;
-    padding-bottom: 2px; 
+    padding-bottom: 2px;
 
   }
   .slick-slide {
@@ -424,13 +444,11 @@
     height: 70%;
     width: auto;
     min-height: 1px;
-    padding-left: 0px;
-    padding-right: 10px;
     outline: none;
 }
  #introtext {
     font-family: Futura;
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: 900;
     line-height: 1;
     height:280px;
@@ -472,11 +490,61 @@
     padding: 0 0 0 0;
 
  }
+ #services {
+
+    padding: 60px 20;
+}
+
+#slickslider1 {
+  height: 200px;
+}
+
+#slickslider2 {
+  height: 200px;
+}
+
+#slickslider3 {
+  height: 200px;
+}
+
+#slickslider4 {
+  height: 200px;
+}
+
+#slickslider5 {
+  height: 200px;
+}
+
+#slickslider6 {
+  height: 200px;
+}
+
+#slickslider7 {
+  height: 200px;
+}
+
+#slickslider8 {
+  height: 200px;
+}
+
+#slickslider9 {
+  height: 200px;
+}
+
+#slickslider10 {
+  height: 200px;
+}
+
+
+
+
+
+
 }
 /*For tablet screen sizes*/ 
 
 
-@media (max-width : 900px)   {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)   {
 
     .variable-width img{
     height:90%;
@@ -484,6 +552,12 @@
     padding-bottom: 2px; 
 
   }
+
+  #SocialIcons {
+    position: absolute;
+    bottom: 30px;
+    left: 260px;
+}
   .slick-slide {
     display: none;
     float: left;
@@ -542,7 +616,7 @@
 }
 
 /*For desktop screen sizes*/
-@media (min-width: 1900px)  {
+@media only screen (min-width: 1824px)  {
 
     #services {
     font-family: Futura;
