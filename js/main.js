@@ -60,10 +60,10 @@ $(document).ready(function(){
   $('.variable-width').slick({
     dots: false,
     infinite: false,
-    slidesToShow: 5,
+    slidesToShow: 2,
     slidesToScroll: 1,
     speed: 300,
-    centerMode: true,
+    centerMode: false,
     variableWidth: true,
     responsive: [
       {
@@ -115,3 +115,13 @@ $(document).ready(function() {
          
 });
 
+jQuery('#fancyOverlay-large').on({
+    beforeChange: function(event, slick, current_slide_index, next_slide_index) {
+        //remove all active class
+        jQuery('#fancyOverlay-large .slick-slide').removeClass('slick-main-active');
+        //set active class for current slide
+        jQuery('#fancyOverlay-large .slick-slide[data-index='+next_slide_index+']').addClass('slick-main-active');
+    }
+}).slick({
+    asNavFor: '#fancyOverlay-carousel',
+}); 
