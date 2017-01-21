@@ -115,4 +115,8 @@ $(document).ready(function() {
          
 });
 
+const openers = document.querySelector('.openers');
 
+function handleOpeners(e) {
+    e.currentTarget.classList.toggle('open');
+}
