@@ -308,13 +308,14 @@
 
   #fancyOverlay-carousel {
     position: relative;
+    height: 600px;
   }
 
 
   #fancyOverlay-carousel div {
    
-   margin-left: 40px;
-   margin-right: 40px;
+   margin-left: 150px;
+   margin-right: 150px;
    padding-left: 60px;
    padding-right: 60px;
   } 
@@ -371,7 +372,7 @@
   }
 
   /* Required to hold the caption, or any closest parent selector to  .slide__caption */
-.slick-slide {
+.slick-slide{
   position: relative;
 
 }
@@ -384,10 +385,10 @@
   height: 100%;
   width:100%;
   background-color: rgba(255, 255, 255, 0.5);
-  /*padding-left:10px;
+/*  padding-left:10px;
   padding-right: 10px;*/
   text-align: center;
-  font-size: 4vh;
+  font-size: 1.2vw;
 }
 
 .slide--has-caption:hover  .caption {
