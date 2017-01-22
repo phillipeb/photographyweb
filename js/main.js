@@ -90,10 +90,9 @@ $(document).ready(function(){
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 2,
           variableWidth:true,
-          infinite: true,
           arrows:false
 
         }
@@ -115,8 +114,4 @@ $(document).ready(function() {
          
 });
 
-const openers = document.querySelector('.openers');
 
-function handleOpeners(e) {
-    e.currentTarget.classList.toggle('open');
-}
