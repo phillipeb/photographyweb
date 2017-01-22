@@ -13,7 +13,20 @@
   	font-family: Futura;
   	background-color: rgb(209,209,209);
     color:black;
+  }
 
+  }
+  a a:focus, a:hover {
+    text-decoration: none;
+    color:yellow;
+    background-color: none;
+  }
+  h2 a:hover {
+    color:yellow!important;
+    text-decoration: none;
+  }
+  h2 a, a:visited{
+    color: white!important;
   }
   #introtext {
     font-family: Futura;
@@ -38,7 +51,9 @@
     z-index: 2;
     width: 95%;
     border-width: 15px;
-    border-bottom: none;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right:0px;
     border-style: solid;
     color: yellow;
     display:inline-block;
@@ -47,10 +62,15 @@
       transform: rotate(-2deg);
 
   }
+    .slidenav a:active, {
+      color: yellow!important;
+    }
+   .slidenav a:focus  {
+      color: yellow)!important;
+  }
 
-   .slidenav> a:active a:focus,  {
-      color: rgb(254, 240, 89)!important;
-   
+  .slidenav a:hover  {
+      color: yellow!important;
   }
   .textPrimary {
     color:yellow; 
@@ -58,11 +78,11 @@
 
   .subnavcol {
     float: left ;
-    padding-left: 0;
+    padding-left: 48px;
   }
   .subnavcol2 {
     float: left ;
-    padding-left: 5%;
+    
   }
 
   /*navigation menu item spacing*/
@@ -86,7 +106,7 @@
   }
 
 
-  #services a, a:focus, a:hover, a:visited, a:active {
+  #services a, a:focus, a:visited, a:hover a:active {
     color: black;
     text-decoration: none;
    }
@@ -158,7 +178,7 @@
     color: rgba(255, 255, 255, 1);
   }
 
-  .menu>ul {
+  .menu > ul {
     padding: 120 0 0 0;
     
   }
@@ -262,11 +282,14 @@
 
 
   /* Centers text on image slider*/
+  
+
   .wordimage {
     position: absolute;
     left:150px;
     top: 30%;
     text-align: left;
+    color: white;
    
   }
   /*styles the words on the image slider*/
@@ -312,14 +335,6 @@
     height: 600px;
   }
 
-#fancyOverlay-carousel> .slick-act  {
-  border-style: solid;
-  border-width:5px;
-  border-top-color: yellow;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-}
 
   #fancyOverlay-carousel div {
    
@@ -343,7 +358,9 @@
   }
 
 
-
+#fancyOverlay-large div {
+  width:95%;
+}
   #fancyOverlay-large  img {
     display: block;
     height:80%;
@@ -359,6 +376,7 @@
     position: fixed;
     padding-left: 2%;
     padding-right: 2%;
+
   }
 
   #fancyoverlay .close-button {
@@ -392,12 +410,10 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  padding-top: 75px;
+  padding-top: 120px;
   height: 100%;
   width:100%;
   background-color: rgba(255, 255, 255, 0.5);
-/*  padding-left:10px;
-  padding-right: 10px;*/
   text-align: center;
   font-size: 1.4vw;
 
@@ -415,6 +431,34 @@
   /*For phone screen sizes*/
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+#fancyOverlay-carousel div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+#fancyOverlay-carousel img {
+    height: 25%;
+    padding: 5px;
+}
+    #fancyOverlay-large img {
+    display: block;
+    height: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #fancyoverlay .close-button {
+    position: absolute;
+    top: -4px;
+    right: 9px;
+    color: #ddd;
+    padding: 10px;
+    font-size: 40px;
+    cursor: pointer;
+  }
 
 .menu>ul {
     padding: 120 40 0 60;
@@ -458,19 +502,13 @@
    
   }
   .crossedOut {
-    position: absolute;
     top: 45%;
-    left: 0px;
-    z-index: 2;
     width: 95%;
     border-width: 6px;
-    border-bottom: none;
-    border-style: solid;
-    color: yellow;
-    display: inline-block;
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right:0px;
+   
 }
 .wordimage {
     position: absolute;
@@ -583,17 +621,8 @@
   .crossedOut {
     position: absolute;
     top: 45%;
-    left: 0px;
-    z-index: 1;
     width: 95%;
-    border-width: 10px;
-    border-bottom: none;
-    border-style: solid;
-    color: yellow;
-    display: inline-block;
-    -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+   
 }
 .wordimage {
     position: absolute;
