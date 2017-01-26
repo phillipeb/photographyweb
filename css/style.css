@@ -33,7 +33,7 @@
     font-size: 6vw;
     font-weight: 900;
     line-height: 1;
-    height:auto;
+    height:900;
     text-align: left;
     padding: 350px 0 100px 60px;
     vertical-align: middle;
@@ -78,7 +78,7 @@
 
   .subnavcol {
     float: left ;
-    padding-left: 48px;
+    padding-left: 38px;
   }
   .subnavcol2 {
     float: left ;
@@ -152,7 +152,7 @@
     background: #333;
     background-color:rgba(10, 10, 10, 0.8);
     position: fixed;
-    top: 0px;
+    top: 60px;
     right: -414px;
     color: white;
 
@@ -179,7 +179,7 @@
   }
 
   .menu > ul {
-    padding: 120 0 0 0;
+    padding: 75 10 0 10;
     
   }
   .menu ul li {
@@ -301,8 +301,7 @@
   }
    #SocialIcons {
     position: absolute; 
-    bottom: 80px;
-    left:270px;
+    top: 10px!important;
 
   }
 
@@ -432,15 +431,15 @@
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-#fancyOverlay-carousel div {
+  #fancyOverlay-carousel div {
     margin-left: 0;
     margin-right: 0;
   }
 
-#fancyOverlay-carousel img {
+  #fancyOverlay-carousel img {
     height: 25%;
     padding: 5px;
-}
+  }
     #fancyOverlay-large img {
     display: block;
     height: 60%;
@@ -449,7 +448,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
   #fancyoverlay .close-button {
     position: absolute;
     top: -4px;
@@ -459,47 +457,30 @@
     font-size: 40px;
     cursor: pointer;
   }
-
-.menu>ul {
-    padding: 120 40 0 60;
-
-    
+  .menu>ul {
+    padding: 75 40 0 60; 
   }
-
-  .slide--has-caption:hover .caption {
-    display: none;
- 
-
-}
+  
+  .caption {
+    height:100%;
+    margin-bottom: 0px;
+  }
   .navbar-brand img {
     padding-top: 5px;
     width: 50%;
-    
-}
-  .variable-width img{
-    max-height:70%;
-    padding-top: 2px;
-    padding-bottom: 2px;
-
+  }
+  .variable-width {
+    max-height:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .slick-slide {
     display: none;
     float: left;
-    height: 70%;
+    height: 100%;
     width: auto;
     min-height: 1px;
     outline: none;
-}
- #introtext {
-    font-family: Futura;
-    font-size: 5vw;
-    font-weight: 900;
-    line-height: 1;
-    height:280px;
-    text-align: left;
-    padding: 120px 0 60px 60px;
-    vertical-align: middle;
-   
   }
   .crossedOut {
     top: 45%;
@@ -508,94 +489,86 @@
     border-bottom: 0px;
     border-left: 0px;
     border-right:0px;
-   
-}
-.wordimage {
+  }
+  .wordimage {
     position: absolute;
     left: 100px;
     top: 30%;
     text-align: left;
-}
+  }
+  #services {
+    padding-top:20%;
+    height:500px!important;
+  }
 
-#services {
-  padding-top:20%;
-  height:500px!important;
-}
-
-.navicon img {
+  #introtext {
+    height: 456px;
+    padding: 200 20 0 20;
+    }
+  .navicon img {
     height: 25px;
     width: 35px;
     padding: 0 0 0 0;
-
  }
- #services {
-
+  #services {
     padding: 60px 20;
-}
-
-#slickslider1 {
-  height: 200px;
-}
-
-#slickslider2 {
-  height: 200px;
-}
-
-#slickslider3 {
-  height: 200px;
-}
-
-#slickslider4 {
-  height: 200px;
-}
-
-#slickslider5 {
-  height: 200px;
-}
-
-#slickslider6 {
-  height: 200px;
-}
-
-#slickslider7 {
-  height: 200px;
-}
-
-#slickslider8 {
-  height: 200px;
-}
-
-#slickslider9 {
-  height: 200px;
-}
-
-#slickslider10 {
-  height: 200px;
-}
-
-
-
-
-
-
+  }
+  #slickslider1 {
+    height: 200px;
+  }
+  #slickslider2 {
+    height: 200px;
+  }
+  #slickslider3 {
+    height: 200px;
+  }
+  #slickslider4 {
+    height: 200px;
+  }
+  #slickslider5 {
+    height: 200px;
+  }
+  #slickslider6 {
+    height: 200px;
+  }
+  #slickslider7 {
+    height: 200px;
+  }
+  #slickslider8 {
+    height: 200px;
+  }
+  #slickslider9 {
+    height: 200px;
+  }
+  #slickslider10 {
+    height: 200px;
+  }
 }
 /*For tablet screen sizes*/ 
 
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)   {
 
-    .variable-width img{
-    height:90%;
+    .variable-width img {
+    height: 90%;
     padding-top: 2px;
     padding-bottom: 2px; 
-
+  }
+  #SocialIcons {
+    /*position: absolute;*/
+  
   }
 
-  #SocialIcons {
-    position: absolute;
-    bottom: 30px;
-    left: 260px;
-}
+  .caption {
+    right: 0;
+    bottom: 0;
+    padding-top: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 1.4vw;
+  }
   .slick-slide {
     display: none;
     float: left;
@@ -605,31 +578,22 @@
     padding-left: 0px;
     padding-right: 10px;
     outline: none;
-}
- #introtext {
-
-    font-family: Futura;
-    font-size: 6vw;
-    font-weight: 900;
-    line-height: 1;
-    height:100%;
-    text-align: left;
-    padding: 300px 0 60px 60px;
-    vertical-align: middle;
-   
+  }
+ #introtext {    
+    height: 590px;
+    padding: 235px 0 60px 60px;
   }
   .crossedOut {
     position: absolute;
     top: 45%;
     width: 95%;
-   
-}
+  }
 .wordimage {
     position: absolute;
     left: 150px;
     top: 30%;
     text-align: left;
-}
+  }
 .slick-prev, .slick-next {
     font-size: 0;
     line-height: 0;
@@ -641,12 +605,41 @@
     border: none;
     outline: none;
     background: none;
- }
+  }
+  #fancyOverlay-carousel {
+    position: relative;
+    height: 600px;
+  }
+  #fancyOverlay-carousel div {
+   padding-left: 0;
+   padding-right: 0;
+  } 
+   #fancyOverlay-carousel img {
+    height: 65%;
+    padding: 10 5 0 5;
+    width: auto;
+  }
+  #fancyOverlay-large img {
+    display: block;
+    height: 60%;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slick-list {
+
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+
+  }
 }
 
 /*For desktop screen sizes*/
-@media only screen (min-width: 1824px)  {
-
+@media only screen and (min-width: 1824px)  {
     #services {
     font-family: Futura;
     font-size: 6vw;
@@ -654,11 +647,8 @@
     text-decoration: none;
     height: 1200px;
     padding: 60px 60px;
-
-
   }
-
-   #introtext {
+    #introtext {
     font-family: Futura;
     font-size: 6vw;
     font-weight: 900;
@@ -668,6 +658,5 @@
     vertical-align: middle;
     height: 1200px;
     padding-top: 20%;
-   
   }
 }
