@@ -70,18 +70,18 @@ $(document).ready(function(){
         breakpoint: 1024,
         settings: {
           infinite:false,
-          slidesToShow: 5,
+          slidesToShow: 2,
           slidesToScroll: 1,
           variableWidth:true,
           dots: false,
-          infinite: true,
+          infinite: false,
           arrows: true
         }
       },
       {
         breakpoint: 760,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           arrows:false
@@ -90,8 +90,8 @@ $(document).ready(function(){
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           variableWidth:true,
           arrows:false
 

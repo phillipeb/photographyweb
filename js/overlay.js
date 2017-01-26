@@ -5,7 +5,7 @@ var opts = {
 	dots: false,
 	infinite: false,
 	slidesToShow: 3,
-	slidesToScroll: 3,
+	slidesToScroll: 1,
 	speed: 300,
 	centerMode: false,
 	variableWidth: true,
@@ -15,7 +15,7 @@ var opts = {
 			breakpoint: 1024,
 			settings: {
 				infinite:false,
-				slidesToShow: 3,
+				slidesToShow: 1,
 				slidesToScroll: 1,
 				variableWidth:true,
 				dots: false,
@@ -25,9 +25,9 @@ var opts = {
 		{
 			breakpoint: 600,
 			settings: {
-				slidesToShow: 2,
+				slidesToShow: 1,
 				slidesToScroll: 1,
-				arrows: false
+				arrows:true
 			}
 		},
 		{
