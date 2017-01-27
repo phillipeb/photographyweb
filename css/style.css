@@ -380,8 +380,8 @@
 
   #fancyoverlay .close-button {
     position: absolute;
-    top: 20px;
-    right:50px;
+    top: 5px;
+    right: 15px;
     color: #ddd;
     padding: 10px;
     font-size: 40px;
@@ -449,22 +449,40 @@
     padding-right: 5;
   }
 
+  #fancyOverlay-carousel {
+    height: 20%;
+    width: 100%;
+    bottom: 50px;
+    
+  }
+
   #fancyOverlay-carousel div {
     margin-left: 0;
     margin-right: 0;
   }
 
   #fancyOverlay-carousel img {
-    height: 25%;
-    padding: 5px;
+    height: 100%;
+    width:auto;
+    padding: 0 0 0 0;
   }
+
+    #fancyOverlay-large {
+    height: 75%;
+    width: 100%;
+    
+    }
+
+
     #fancyOverlay-large img {
     display: block;
-    height: 60%;
+    max-height: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    padding-top: 50px;
   }
   #fancyoverlay .close-button {
     position: absolute;
@@ -625,24 +643,32 @@
   }
   #fancyOverlay-carousel {
     position: relative;
-    height: 600px;
+    height: 35%;
+    margin-top: 30px;
   }
   #fancyOverlay-carousel div {
    padding-left: 0;
    padding-right: 0;
   } 
    #fancyOverlay-carousel img {
-    height: 65%;
+    height: 100%;
     padding: 10 5 0 5;
     width: auto;
   }
+
+  #fancyOverlay-large {
+    height: 60%;
+    width:100%;
+  }
+
   #fancyOverlay-large img {
     display: block;
-    height: 60%;
+    height: 100%;
     margin-top: 90px;
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
   }
 
   .slick-list {
