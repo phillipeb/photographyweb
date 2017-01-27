@@ -431,6 +431,24 @@
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
+    .navbar-brand, .navbar-nav li a {
+    height: 50px;
+    padding: 0 25px 0;
+  }
+
+    .menu {
+      font-size: 19px;
+      top: 50px;
+    }
+  .textsubmenu {
+    font-size: 14px;
+  }
+
+  .subnavcol {
+    padding-left: 15px;
+    padding-right: 5;
+  }
+
   #fancyOverlay-carousel div {
     margin-left: 0;
     margin-right: 0;
@@ -458,15 +476,17 @@
     cursor: pointer;
   }
   .menu>ul {
-    padding: 75 40 0 60; 
+    padding: 40 20 0 60; 
   }
   
   .caption {
     height:100%;
     margin-bottom: 0px;
+    font-size: 4.4vw;
+    padding-top: 60px;
   }
   .navbar-brand img {
-    padding-top: 5px;
+    padding-top: 13px;
     width: 50%;
   }
   .variable-width {
@@ -506,8 +526,8 @@
     padding: 200 20 0 20;
     }
   .navicon img {
-    height: 25px;
-    width: 35px;
+    height: 3.75%;
+    width: 85%;
     padding: 0 0 0 0;
  }
   #services {
@@ -550,24 +570,21 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)   {
 
     .variable-width img {
-    height: 90%;
+    height: 100%;
     padding-top: 2px;
-    padding-bottom: 2px; 
-  }
-  #SocialIcons {
-    /*position: absolute;*/
-  
+   
   }
 
   .caption {
-    right: 0;
-    bottom: 0;
-    padding-top: 100px;
+    right: 0px;
+    bottom: 2px;
+    padding-top: 83px;
     height: 100%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 2vw;
+    top: 2px;
   }
   .slick-slide {
     display: none;
@@ -576,7 +593,7 @@
     width: auto;
     min-height: 1px;
     padding-left: 0px;
-    padding-right: 10px;
+    padding-right: 0px;
     outline: none;
   }
  #introtext {    
@@ -634,8 +651,41 @@
     padding-right: 0px!important;
     margin-left: 0px!important;
     margin-right: 0px!important;
-
   }
+
+#slickslider1 {
+    height: 33%;
+  }
+  
+  #slickslider2 {
+    height: 33%;
+  }
+  #slickslider3 {
+    height: 33%;
+  }
+  #slickslider4 {
+    height: 33%;
+  }
+  #slickslider5 {
+    height: 33%;
+  }
+  #slickslider6 {
+    height: 33%;
+  }
+  #slickslider7 {
+    height: 33%;
+  }
+  #slickslider8 {
+    height: 33%;
+  }
+  #slickslider9 {
+    height: 33%;
+  }
+  #slickslider10 {
+    height: 33%;
+  }
+
+
 }
 
 /*For desktop screen sizes*/
